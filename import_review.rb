@@ -75,7 +75,7 @@ if !File.directory?(outputDirectory) then
 	abort("Output Directory #{outputDirectory} does not exist or is not a directory")
 end
 
-books = importer.listBooks(opt[:user], fetchCount)
+books = importer.listBooks(opts[:user], fetchCount)
 
 if books.count <= 0 then
 	abort("Unable to find any reviews from Goodreads\n")
